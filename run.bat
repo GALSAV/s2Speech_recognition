@@ -1,0 +1,2 @@
+s2voice_recognition.exe
+pause
