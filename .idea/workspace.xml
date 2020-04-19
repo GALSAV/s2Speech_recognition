@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -19,6 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -69,9 +77,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_speech_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Robot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_speech_recognition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.s2voice_recognition" />
+        <item itemvalue="Python.test_speech_recognition" />
         <item itemvalue="Python.s2listen_edit2" />
       </list>
     </recent_temporary>
@@ -102,30 +132,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1204" y="445" width="515" height="595" key="#xdebugger.evaluate" timestamp="1587286588832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1204" y="445" width="515" height="595" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1587286588832" />
     <state width="423" height="466" key="DebuggerActiveHint" timestamp="1587235526416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="423" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1587235526416" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1587129240441">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1587248781292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587129240441" />
-    <state width="1899" height="218" key="GridCell.Tab.0.bottom" timestamp="1587248335925">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587248781292" />
+    <state width="1256" height="218" key="GridCell.Tab.0.bottom" timestamp="1587288499873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587248335925" />
-    <state width="1899" height="218" key="GridCell.Tab.0.center" timestamp="1587248335925">
+    <state width="1256" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587288499873" />
+    <state width="1256" height="218" key="GridCell.Tab.0.center" timestamp="1587288499872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587248335925" />
-    <state width="1899" height="218" key="GridCell.Tab.0.left" timestamp="1587248335925">
+    <state width="1256" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587288499872" />
+    <state width="1256" height="218" key="GridCell.Tab.0.left" timestamp="1587288499872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587248335925" />
-    <state width="1899" height="218" key="GridCell.Tab.0.right" timestamp="1587248335925">
+    <state width="1256" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587288499872" />
+    <state width="1256" height="218" key="GridCell.Tab.0.right" timestamp="1587288499872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587248335925" />
+    <state width="1256" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587288499872" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1587249581308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587249581308" />
     <state x="726" y="139" width="540" height="524" key="StructurePopup" timestamp="1587240805049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -134,5 +172,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587235763351" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_speech_recognition.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_speech_recognition.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/s2voice_recognition.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/s2voice_recognition.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
