@@ -1,0 +1,21 @@
+{
+    "extensionName": "s2voice_recognition",
+    "extensionPort": 50211,
+    "url": "https://github.com/GALSAV/s2Speech_recognition",
+    "blockSpecs": [
+        [
+            "w",
+            "הקלט פקודה קולית והמתן %m.waittime שניות",
+            "recogwait",
+            "5"
+        ],
+        [
+            "r",
+            "פקודה קולית",
+            "heardsentence"
+        ]
+     ],
+    "menus": {
+        "waittime":[1, 2, 3, 4, 5, 6, 7, 8],
+    }
+}

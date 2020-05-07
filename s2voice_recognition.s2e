@@ -1,7 +1,7 @@
 {
-    "extensionName": "s2listen",
+    "extensionName": "s2voice_recognition",
     "extensionPort": 50211,
-    "url": "https://github.com/memakura/s2listen",
+    "url": "https://github.com/GALSAV/s2Speech_recognition",
     "blockSpecs": [
         [
             "w",
