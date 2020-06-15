@@ -1,1 +1,2 @@
 node Tello.js
+pause

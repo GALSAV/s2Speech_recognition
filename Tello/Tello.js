@@ -17,39 +17,16 @@ var http = require('http');
 var fs = require('fs');
 var url = require('url');
 
-var osdData = {};
+
 
 var PORT = 8889;
 var HOST = '192.168.10.1';
 
-var PORT2 = 8890;
-var HOST2 = '0.0.0.0';
-
 var dgram = require('dgram');
 var client = dgram.createSocket('udp4');
 
-const server = dgram.createSocket('udp4');
-
-var message = new Buffer( 'command' );
-client.send(message, 0, message.length, PORT, HOST, function(err, bytes) {
-	if (err) {
-		throw err;
-	}
-});
 
 http.createServer( function (request, response) {  
-
-
-	/*if(command != 'poll')
-	{
-		var message = new Buffer( 'command' );
-		client.send(message, 0, message.length, PORT, HOST, function(err, bytes) {
-			if (err) {
-				console.log(err);
-				throw err;
-			}
-		});		
-	}	*/	
 
 	var pathname = url.parse(request.url).pathname;
        
@@ -168,8 +145,7 @@ http.createServer( function (request, response) {
 			client.send(message, 0, message.length, PORT, HOST, function(err, bytes) {
 				if (err) throw err;
 			});			
-		break;	
-
+		break;				
 			
 	  }
 	response.end('Hello Tello.\n');
@@ -185,7 +161,7 @@ console.log('---------------------------------------');
 function respondToPoll(response){
 
     var noDataReceived = false;
-/*
+
     var resp = "";
     var i;
     for (i = 0; i < dataToTrack_keys.length; i++){
@@ -193,18 +169,7 @@ function respondToPoll(response){
         resp += (i+10);
 		resp += "\n";
     }
-	console.log('resp : ' + resp);*/
-
-	let rst = '';
-	for(let k in osdData) {
-		rst += `${k} ${osdData[k]}\n`;
-	}
-	//console.log('rst : ' + rst);
-    response.end(rst);
-	client.send(message, 0, message.length, PORT, HOST, function(err, bytes) {
-	if (err) {
-		throw err;
-	}
+    response.end(resp);
 }
 
 function TakeoffRequest(){
@@ -229,44 +194,4 @@ function LandRequest(){
 		if (err) throw err;
 	});
 }
-
-let listenState = function () 
-{
-	var message = new Buffer( 'command' );
-			client.send(message, 0, message.length, PORT, HOST, function(err, bytes) {
-				if (err) throw err;
-			});			
-/*	server.on('message', (msg, rinfo) => 
-	{ 	msg = msg.toString().trim();
-		let fieldList = msg.split(';');
-		console.log({fieldList});
-		fieldList.forEach(function (field){let [key, value] = field.split(':');osdData[key] = value; console.log('key={key} value={value}')})
-	});
-
-	server.on('listening', () => {const address = server.address();console.log(`server listening ${address.address}:${address.port}`);});
-
-	server.bind(PORT2, HOST2);*/
-	console.log('listenState'); 
-	server.on('error', (err) => {
-	  console.log(`server error:\n${err.stack}`);
-	  server.close();
-	});
-
-	server.on('message', (msg, rinfo) => {
-	  console.log(`server got: ${msg} from ${rinfo.address}:${rinfo.port}`);
-	});
-
-	server.on('listening', () => {
-	  const address = server.address();
-	  console.log(`server listening ${address.address}:${address.port}`);
-	});
-	server.bind({
-		address: '192.168.10.2',
-		port: 8890,
-		exclusive: true
-	});
-};
-
-//listenState();
-
 
